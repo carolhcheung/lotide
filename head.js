@@ -7,7 +7,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+const head = function(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    return arr[0];
+  }
+};
 
+
+// TEST CODE
+assertEqual(head([]), undefined);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
