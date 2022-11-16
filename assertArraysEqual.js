@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const eqArrays = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else if (actual == null || expected == null) {
@@ -16,5 +16,5 @@ const eqArrays = function(actual, expected) {
 };
 
 // TEST CODE
-console.log(eqArrays([1, 2, 3], [1, 2, 3]));
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3]));
