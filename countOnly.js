@@ -12,11 +12,11 @@ const assertEqual = function(actual, expected) {
 const countOnly = function(allItems, itemsToCount) {
   let result = {};
   for (let item of allItems) {
-    if (itemsToCount[item]) { // the value of the key is true
-      if (result[item]) {  // to see if the key already exisit in the resulting object
-        result[item] += 1; // counter +1 if already exisits
+    if (itemsToCount[item]) { 
+      if (result[item]) {  object
+        result[item] += 1;
       } else {
-        result[item] = 1; // assign it to 1 if it hasnt exisit
+        result[item] = 1; 
       }
     }
   }
