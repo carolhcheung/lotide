@@ -1,9 +1,9 @@
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`)
+    console.log(`🛑 🛑 🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -12,11 +12,11 @@ const countLetters = function (string) {
   for (let character of string) {
     if (character !== " ") {
       if (!result[character]) {
-        result[character] = 1;  // left hand side is key; right hand side is value
+        result[character] = 1;  
       } else {
         result[character] += 1;
       }
     }
   }
-  return result
-}
+  return result;
+};
