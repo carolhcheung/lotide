@@ -9,8 +9,5 @@ const head = function(arr) {   //use for loop to loop through array, and return 
 //code is used to check if actual = expected, try [5], === 5? good
 //then check empty array [] === undefined? good
 
-// TEST CODE
-assertEqual(head([]), undefined);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
 module.exports = head;

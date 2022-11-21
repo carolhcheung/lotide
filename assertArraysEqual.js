@@ -11,8 +11,5 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 
-// TEST CODE
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]));
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3", "4"]));
 
 module.exports = assertArraysEqual;

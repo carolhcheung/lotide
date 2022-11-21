@@ -1,4 +1,4 @@
-const assertEqual = require("./assertEqual");
+// const assertEqual = require("./assertEqual");
 
 const countLetters = function (string) {
   let result = {};                      //set empty object for accumulators
@@ -11,7 +11,8 @@ const countLetters = function (string) {
       }
     }
   }
-  return result;                      //return total new object accumulator
+  return result                      //return total new object accumulator
 };
 
-module.exports = countLetters;
+
+module.exports = countLetters; 

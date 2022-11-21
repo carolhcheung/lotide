@@ -20,9 +20,4 @@ const letterPositions = function(sentence) {
   return results;// logic to update results here
 }
 
-const results = letterPositions("hello world");
-console.log(results)
-
-assertArraysEqual(letterPositions("hello").e, [1]);  //checks if there's #e = 1
-
 module.exports = letterPositions;
