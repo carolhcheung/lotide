@@ -15,3 +15,5 @@ return word1Rev + word2Rev;
 };
 
 console.log(reverse('hello', 'goodbye'));
+
+module.exports = reverse;

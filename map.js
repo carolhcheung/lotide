@@ -1,3 +1,6 @@
+const assertArraysEqual = require("./assertArraysEqual");
+const eqArrays = require("./eqArrays");
+
 const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function(array, callback) { 
@@ -12,24 +15,7 @@ const results1 = map(words, word => word[0]);  //reference to ln3 (array, callba
 
 console.log(results1);
 
-const eqArrays = function(actual, expected) {
-  for (let i = 0; i < actual.length; i++) {
-   if (actual[i] !== expected[i]) {
-     return false;
-   }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  let result = eqArrays(actual, expected);
-  if (result === true) {
-    console.log(`✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-  if (result === false) {
-    console.log(`🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
 assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 
+module.exports = map;
