@@ -1,7 +1,7 @@
 const eqArrays = require("./eqArrays");
 const assertArraysEqual = require("./assertArraysEqual");
 
-const words = ["hello", "world", "lighthouse"];
+
 const without = function(source, itemsToRemove) {
   let updatedItems = [];
   for (let i = 0; i < source.length; i++) {
@@ -18,7 +18,5 @@ const without = function(source, itemsToRemove) {
   }
   return updatedItems;
 };
-assertArraysEqual(without(["5", "6", "7"], [1, 7, "6"]));
-assertArraysEqual(words, ["lighthouse"]);
 
 module.exports = without;
